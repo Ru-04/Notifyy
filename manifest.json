@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Google Chat AI Hook",
+  "version": "1.0",
+  "description": "Scrapes Google Chat messages and hooks them to a local AI triage server.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.google.com/*",
+        "https://mail.google.com/chat/*",
+        "https://mail.google.com/mail/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
