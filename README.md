@@ -5,7 +5,7 @@ NOTIFY is an AI-powered notification filtering system for Google Chat that only 
 ## Features
 
 - Detects new Google Chat messages
-- Uses Gemini AI to classify message importance
+- Uses a carefully engineered AI prompt to classify message importance
 - Shows desktop notifications only for critical messages
 - Filters out routine and low-priority chats
 - Supports VIP sender prioritization
@@ -15,8 +15,13 @@ NOTIFY is an AI-powered notification filtering system for Google Chat that only 
 - Python
 - FastAPI
 - Google Gemini API
+- Prompt Engineering
 - Chrome Extension
 - JavaScript
+
+## AI Prompting
+
+The project relies on a detailed prompt engineering approach to guide Gemini into acting as a workplace message triage engine. Instead of generating conversational responses, the model follows strict instructions and returns structured JSON indicating whether a message is critical.
 
 ## Project Structure
 
